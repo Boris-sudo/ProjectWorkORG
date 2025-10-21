@@ -1,0 +1,51 @@
+/* VARIABLES */
+
+:root { /* fonts */
+    --ff-lato:    "Lato";
+    --ff-roboto:  "Roboto";
+    --ff-jost:    "Jost";
+    --ff-inter:   "Inter";
+    --ff-noto:    "Noto Sans";
+    --ff-manrope: "Manrope";
+    --ff-viaoda:  "Viaoda Libre";
+    --ff-tinos:   "Tinos";
+}
+
+:root { /* colors */
+    /* MAIN COLORS */
+    --interaction-primary:  rgba(15, 98, 254, 1);
+    --accent-color-1:       ;
+
+    --background-primary:   rgba(255, 255, 255, 1);
+    --background-secondary: rgba(206, 212, 218, 1);
+    --background-neutral:   rgb(225, 225, 225);
+    --background-accent:    rgba(233, 84, 50, 1);
+    --background-accent-2:  rgb(191, 237, 9);
+    --background-accent-3:  rgb(94, 29, 203);
+
+    --text-primary:         rgb(0, 0, 0);
+    --text-secondary:       rgb(52, 52, 52);
+    --text-accent:          rgb(106, 106, 106);
+}
+
+:root { /* sizes */
+    --header-small-height: 80px;
+    --header-big-height:   120px;
+
+    @media screen and (max-width: 600px) {
+        --header-small-height: 60px;
+        --header-big-height:   100px;
+    }
+}
+
+:root { /* border radius */
+    --br-100: 999px;
+    --br-32:  32px;
+    --br-16:  16px;
+    --br-8:   8px;
+}
+
+:root { /* transition duration times */
+    --slow-transition-time: .6s;
+    --fast-transition-time: .3s;
+}
