@@ -60,7 +60,7 @@ import { UtilsService } from '../services/utils';
                 transition:     .5s cubic-bezier(.3, .86, .36, .95);
                 animation:      menu-icon-appear .5s forwards ease-in-out;
                 opacity:        0.5;
-                color:          var(--text-primary);
+                color:          var(--text-secondary);
 
                 @media screen and (max-width: 600px) {
                     padding: 0 8px;
@@ -95,7 +95,7 @@ import { UtilsService } from '../services/utils';
                         width:         36px;
                         height:        2px;
                         border-radius: var(--br-100);
-                        background:    var(--background-neutral);
+                        background:    var(--text-secondary);
                     }
                 }
 
@@ -103,28 +103,10 @@ import { UtilsService } from '../services/utils';
                     padding:    0 25px;
                     gap:        24px;
                     background: var(--background-neutral);
-                    color:      var(--background-primary);
+                    color:      var(--text-accent);
 
                     .line {
-                        background: var(--background-primary) !important;
-                    }
-                }
-
-                &.active {
-                    background: var(--background-neutral);
-                    color:      var(--background-primary);
-
-                    .line {
-                        width:      20px;
-                        background: var(--background-primary) !important;
-
-                        &:nth-child(1) {
-                            transform: translateY(4px) rotate(45deg);
-                        }
-
-                        &:nth-child(2) {
-                            transform: translateY(-4px) rotate(-45deg);
-                        }
+                        background: var(--text-accent) !important;
                     }
                 }
             }
@@ -145,6 +127,14 @@ import { UtilsService } from '../services/utils';
             &.sidebar-opened {
                 border-bottom-color: var(--background-secondary);
 
+                .menu-icon {
+                    background: var(--background-neutral);
+                    color:      var(--background-primary);
+
+                    .line {
+                        background: var(--background-primary) !important;
+                    }
+                }
 
                 &::after {
                     bottom: 0;

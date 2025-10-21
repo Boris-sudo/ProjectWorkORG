@@ -205,89 +205,85 @@ import { Router } from '@angular/router';
     template: `
         <div class="container" #container>
             <div class="content">
-<!--                <div class="scroll-content">-->
-                    <div class="block" #content>
-                        <p (click)="redirectTo('home')" imageSrc="main.png" style="--timeout: 0s;">
-                            <span class="text">Главная</span>
-                            <span class="arrow-component">
+                <!--                <div class="scroll-content">-->
+                <div class="block" #content>
+                    <p (click)="redirectTo('home')" imageSrc="main.png" style="--timeout: 0s;">
+                        <span class="text">Главная</span>
+                        <span class="arrow-component">
                             <svg class="arrow-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="12"
                                  fill="none" viewBox="0 0 24 12"><path fill="currentColor"
                                                                        d="M0 5.113h20.644L17.577 2.04 18.804.804 24 6l-5.196 5.196-1.227-1.235 3.067-3.074H0z"></path></svg>
                             <span class="arrow-circle"></span>
                         </span>
-                        </p>
-                        <p (click)="redirectTo('blogs')" imageSrc="blog.png" style="--timeout: .1s;">
-                            <span class="text">Блоги</span>
-                            <span class="arrow-component">
+                    </p>
+                    <p (click)="redirectTo('blogs')" imageSrc="blog.png" style="--timeout: .1s;">
+                        <span class="text">______</span>
+                        <span class="arrow-component">
                             <svg class="arrow-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="12"
                                  fill="none" viewBox="0 0 24 12"><path fill="currentColor"
                                                                        d="M0 5.113h20.644L17.577 2.04 18.804.804 24 6l-5.196 5.196-1.227-1.235 3.067-3.074H0z"></path></svg>
                             <span class="arrow-circle"></span>
                         </span>
-                        </p>
-                        <p (click)="redirectTo('futures')" imageSrc="hike.png" style="--timeout: .2s;">
-                            <span class="text">Будущие походы</span>
-                            <span class="arrow-component">
+                    </p>
+                    <p (click)="redirectTo('futures')" imageSrc="hike.png" style="--timeout: .2s;">
+                        <span class="text">______</span>
+                        <span class="arrow-component">
                             <svg class="arrow-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="12"
                                  fill="none" viewBox="0 0 24 12"><path fill="currentColor"
                                                                        d="M0 5.113h20.644L17.577 2.04 18.804.804 24 6l-5.196 5.196-1.227-1.235 3.067-3.074H0z"></path></svg>
                             <span class="arrow-circle"></span>
                         </span>
-                        </p>
-                        <p (click)="redirectTo('gallery')" imageSrc="gallery.png" style="--timeout: .3s;">
-                            <span class="text">Галлерея</span>
-                            <span class="arrow-component">
+                    </p>
+                    <p (click)="redirectTo('gallery')" imageSrc="gallery.png" style="--timeout: .3s;">
+                        <span class="text">Галлерея</span>
+                        <span class="arrow-component">
                             <svg class="arrow-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="12"
                                  fill="none" viewBox="0 0 24 12"><path fill="currentColor"
                                                                        d="M0 5.113h20.644L17.577 2.04 18.804.804 24 6l-5.196 5.196-1.227-1.235 3.067-3.074H0z"></path></svg>
                             <span class="arrow-circle"></span>
                         </span>
-                        </p>
-                        <p (click)="redirectTo('home')" imageSrc="sertificate.png" style="--timeout: .4s;">
-                            <span class="text">Сертификаты</span>
-                            <span class="arrow-component">
+                    </p>
+                    <p (click)="redirectTo('home')" imageSrc="sertificate.png" style="--timeout: .4s;">
+                        <span class="text">Источники</span>
+                        <span class="arrow-component">
                             <svg class="arrow-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="12"
                                  fill="none" viewBox="0 0 24 12"><path fill="currentColor"
                                                                        d="M0 5.113h20.644L17.577 2.04 18.804.804 24 6l-5.196 5.196-1.227-1.235 3.067-3.074H0z"></path></svg>
                             <span class="arrow-circle"></span>
                         </span>
-                        </p>
-                    </div>
+                    </p>
+                </div>
 
-                    <div class="contacts" #contacts>
-                        <a style="--timeout: .0s">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                 stroke="currentColor"
-                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                 class="icon icon-tabler icons-tabler-outline icon-tabler-brand-vk">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path
-                                    d="M14 19h-4a8 8 0 0 1 -8 -8v-5h4v5a4 4 0 0 0 4 4h0v-9h4v4.5l.03 0a4.531 4.531 0 0 0 3.97 -4.496h4l-.342 1.711a6.858 6.858 0 0 1 -3.658 4.789h0a5.34 5.34 0 0 1 3.566 4.111l.434 2.389h0h-4a4.531 4.531 0 0 0 -3.97 -4.496v4.5z"/>
-                            </svg>
-                        </a>
-                        <a style="--timeout: .1s">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                 stroke="currentColor"
-                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                 class="icon icon-tabler icons-tabler-outline icon-tabler-brand-telegram">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"/>
-                            </svg>
-                        </a>
-                        <a style="--timeout: .2s">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                 class="icon icon-tabler icons-tabler-filled icon-tabler-mail-opened">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path
-                                    d="M14.872 14.287l6.522 6.52a2.996 2.996 0 0 1 -2.218 1.188l-.176 .005h-14a2.995 2.995 0 0 1 -2.394 -1.191l6.521 -6.522l2.318 1.545l.116 .066a1 1 0 0 0 .878 0l.116 -.066l2.317 -1.545z"/>
-                                <path d="M2 9.535l5.429 3.62l-5.429 5.43z"/>
-                                <path d="M22 9.535v9.05l-5.43 -5.43z"/>
-                                <path
-                                    d="M12.44 2.102l.115 .066l8.444 5.629l-8.999 6l-9 -6l8.445 -5.63a1 1 0 0 1 .994 -.065z"/>
-                            </svg>
-                        </a>
-                    </div>
-<!--                </div>-->
+                <div class="contacts" #contacts>
+                    <a href="https://yandex.ru/maps/?um=constructor%3Ae7e127a7107135439eea1ba3f32def1b880cfc7888ce87dfcc47b28a001185cd&source=constructorLink"
+                       style="--timeout: .0s">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/>
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.skvclub.ru/semejnie-programmi/2023dagestan" style="--timeout: .1s">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4"/>
+                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"/>
+                            <path d="M11 14h1v4h1"/>
+                            <path d="M12 11h.01"/>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/bokisarik" style="--timeout: .2s">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor"
+                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"/>
+                        </svg>
+                    </a>
+                </div>
+                <!--                </div>-->
             </div>
 
             <div class="image" #image>
