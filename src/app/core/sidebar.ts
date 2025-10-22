@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
     imports: [],
     styles: `
         .container {
+            all:                 unset;
+            box-sizing:          border-box;
             position:            fixed;
             left:                0;
             width:               100vw;
@@ -216,8 +218,8 @@ import { Router } from '@angular/router';
                             <span class="arrow-circle"></span>
                         </span>
                     </p>
-                    <p (click)="redirectTo('blogs')" imageSrc="blog.png" style="--timeout: .1s;">
-                        <span class="text">______</span>
+                    <p (click)="redirectTo('team')" imageSrc="blog.png" style="--timeout: .1s;">
+                        <span class="text">Команда</span>
                         <span class="arrow-component">
                             <svg class="arrow-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="12"
                                  fill="none" viewBox="0 0 24 12"><path fill="currentColor"
@@ -225,8 +227,8 @@ import { Router } from '@angular/router';
                             <span class="arrow-circle"></span>
                         </span>
                     </p>
-                    <p (click)="redirectTo('futures')" imageSrc="hike.png" style="--timeout: .2s;">
-                        <span class="text">______</span>
+                    <p (click)="redirectTo('equipment')" imageSrc="hike.png" style="--timeout: .2s;">
+                        <span class="text">Снаряжение</span>
                         <span class="arrow-component">
                             <svg class="arrow-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="12"
                                  fill="none" viewBox="0 0 24 12"><path fill="currentColor"

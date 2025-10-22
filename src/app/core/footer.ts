@@ -8,6 +8,7 @@ import { Router, RouterLink } from '@angular/router';
     ],
     styles: `
         .container {
+            all: unset;
             display:        flex;
             flex-direction: column;
             height:         500px;
@@ -18,10 +19,10 @@ import { Router, RouterLink } from '@angular/router';
         }
 
         .grid-container {
-            height:                100%;
-            display:               grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(2, 1fr);
+            height:         100%;
+            display:        flex;
+            flex-direction: column;
+            gap:            20px;
 
             div {
                 width:   100%;
@@ -31,8 +32,6 @@ import { Router, RouterLink } from '@angular/router';
         }
 
         .logo-container {
-            grid-row:        span 1;
-            grid-column:     span 1;
             align-items:     center;
             justify-content: center;
             flex-direction:  column;
@@ -43,6 +42,7 @@ import { Router, RouterLink } from '@angular/router';
                 font-weight:         800;
                 font-family:         var(--ff-noto), sans-serif;
                 transition-duration: .3s;
+                text-align:          center;
 
                 &:hover {
                     color: var(--background-accent);
@@ -51,8 +51,6 @@ import { Router, RouterLink } from '@angular/router';
         }
 
         .media-container {
-            grid-row:        span 2;
-            grid-column:     span 1;
             align-items:     center;
             justify-content: center;
             gap:             20px;
@@ -71,6 +69,12 @@ import { Router, RouterLink } from '@angular/router';
                 text-align:  center;
                 font-size:   20px;
                 font-weight: 600;
+            }
+
+            .author {
+                width:      100%;
+                font-size:  16px;
+                margin-top: 20px;
             }
 
             a {
@@ -135,6 +139,7 @@ import { Router, RouterLink } from '@angular/router';
                             </svg>
                         </a>
                     </div>
+                    <p class="author">Designed and made by Boris Kiva</p>
                 </div>
             </div>
         </div>

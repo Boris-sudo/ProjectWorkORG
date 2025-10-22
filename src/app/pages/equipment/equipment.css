@@ -1,0 +1,38 @@
+.container {
+}
+
+h1 {
+    margin: 20px 0 0;
+}
+
+.intro {
+    font-size:   18px;
+    font-family: var(--ff-tinos), sans-serif;
+    line-height: 150%;
+    color:       var(--text-secondary);
+}
+
+ul {
+    list-style-type: none;
+    display:         flex;
+    flex-direction:  column;
+    gap:             10px;
+    margin-bottom:   30px;
+
+    li {
+        font-size: 18px;
+        color:     var(--text-accent);
+
+        span {
+            color: var(--text-primary);
+        }
+
+        b {
+            font-weight: bold;
+            color:       var(--text-primary);
+        }
+
+        &:nth-child(n+10) {
+        }
+    }
+}

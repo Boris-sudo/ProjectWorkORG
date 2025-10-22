@@ -8,6 +8,8 @@ import { UtilsService } from '../services/utils';
     imports: [],
     styles: `
         .container {
+            all:                 unset;
+            box-sizing:          border-box;
             position:            fixed;
             width:               100%;
             height:              var(--header-big-height);

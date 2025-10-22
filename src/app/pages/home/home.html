@@ -6,186 +6,62 @@
                 частичной автоподдержкой.</p>
         </div>
         <div class="media">
-            <p>Дата</p>
-            <p>29 аперля 2023</p>
-            <p>Категории</p>
-            <p>Маршрут, Дагестан</p>
             <p>Длинна</p>
             <p>110 км</p>
+            <p>Набор высоты</p>
+            <p>↗ 5796 м</p>
+            <p>Сброс высоты</p>
+            <p>↘ 4304 м</p>
         </div>
     </div>
 
     <div class="banner-image">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7e127a7107135439eea1ba3f32def1b880cfc7888ce87dfcc47b28a001185cd&amp;source=constructor" width="100%" height="609" frameborder="0"></iframe>
+        <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7e127a7107135439eea1ba3f32def1b880cfc7888ce87dfcc47b28a001185cd&amp;source=constructor"
+            width="100%" height="609" frameborder="0"></iframe>
     </div>
 
-    <div class="route-content">
-        <p class="date">29 августа</p>
-        <div class="block">
-            <p class="header">аул Кубачи</p>
-            <p class="content">Перелёт из Москвы в Махачкалу занял 3,5 часа. После этого мы отправились на трансфере к
-                месту старта — аулу Кубачи, преодолев примерно 150 километров за ещё 3,5 часа. Нас разместили в гостевом доме, где мы
-                смогли отдохнуть и осмотреть город, принять участие в увлекательных мастер-классах.</p>
-            <p class="title">Достопримечательности</p>
-            <div class="views">
-                <div class="card">
-                    <img src="views/img.jpg" alt="view image">
-                    <div class="text">
-                        <p class="name">Мечеть</p>
-                        <p class="desc">Эта мечеть простояла пять столетий, но сейчас находятся в аварийном
-                            состоянии.</p>
+    <div class="blog-container">
+        <div class="author">
+            <p class="month">
+                <span>АВГ</span>
+                <span>23</span>
+            </p>
+            <p class="separator">•••••••••••••••••</p>
+            <p class="name">
+                <span>Авторы:</span>
+                <span>Кива, Косовец, Агальцов</span>
+            </p>
+            <p class="separator">•••••••••••••••••</p>
+            <!--            <p class="quote"></p>-->
+            <p class="separator">•••••••••••••••••</p>
+        </div>
+        <div class="text-container">
+            @for (blogContent of blog.content; track blog) {
+                <div class="head">
+                    <p class="name">{{ blogContent.title }}</p>
+                    <p class="date">{{ blogContent.date }}</p>
+                </div>
+                <p class="text" [innerHTML]="blogContent.text"></p>
+
+                <figure
+                    [style.max-width]="blogContent.images.length === 1 ? '600px' : 'none'"
+                    class="images-container"
+                >
+                    <div class="images">
+                        @for (imageSrc of blogContent.images; track blog) {
+                            <div class="image">
+                                <picture>
+                                    <img [src]="imageSrc" alt="blog image" loading="lazy">
+                                </picture>
+                            </div>
+                        }
                     </div>
-                </div>
-            </div>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img.png" alt="image">
-                <img src="travel/img1.jpg" alt="image">
-                <div class="info">
-                    <p>Длинна</p>
-                    <p>150 км</p>
-                    <p>Особенности</p>
-                    <p>Трансфер</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="date">30 августа</p>
-        <div class="block">
-            <p class="header">аул Шири</p>
-            <p class="content">Переход на стоянку в аул Шири</p>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img2.jpg" alt="image">
-                <img src="travel/img8.jpg" alt="image">
-                <div class="info">
-                    <p>Переход</p>
-                    <p>7км</p>
-                    <p>Высоты</p>
-                    <p>↗365м ↘753м</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="date">01 августа</p>
-        <div class="block">
-            <p class="header">аул Чахри</p>
-            <p class="content">Мы подготовили рюкзаки для перевозки на перевал Вархадаг и отправились туда налегке. Затем мы продолжили путь к заброшенному аулу Чахри, где сделали остановку на ночлег. Этот отрезок пути составил 9 километров.</p>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img7.webp" alt="image">
-                <img src="travel/img9.jpg" alt="image">
-                <div class="info">
-                    <p>Переход</p>
-                    <p>8км ↗806м ↘145м</p>
-                    <p>До аула</p>
-                    <p>9км ↗305м ↘1100м</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="date">02 августа</p>
-        <div class="block">
-            <p class="header">аул Адага</p>
-            <p class="content">Мы отправились в гостевой дом Абдурахмана, расположенный в ауле Адага.</p>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img5.jpg" alt="image">
-                <img src="travel/img6.jpg" alt="image">
-                <div class="info">
-                    <p>Переход</p>
-                    <p>11км ↗783м ↘812м</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="date">03 августа</p>
-        <div class="block">
-            <p class="header">аул Варсит</p>
-            <p class="content">Мы сдали рюкзаки к перевозке и отправились на стоянку в аул Варсит, преодолев перевал Гульпенкала.</p>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img10.jpg" alt="image">
-                <div class="info">
-                    <p>Переход</p>
-                    <p>18км ↗996м ↘962м</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="date">04 августа</p>
-        <div class="block">
-            <p class="header">аул Хустиль</p>
-            <p class="content">Переход на стоянку в аул Хустиль</p>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img11.jpg" alt="image">
-                <div class="info">
-                    <p>Переход</p>
-                    <p>17км ↗578м ↘1100м</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="date">05 августа</p>
-        <div class="block">
-            <p class="header">аул Дарваг</p>
-            <p class="content">Переход на стоянку в аул Дарваг</p>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img12.jpg" alt="image">
-                <img src="travel/img13.jpg" alt="image">
-                <div class="info">
-                    <p>Переход</p>
-                    <p>13км ↗287м ↘395м</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="date">06 августа</p>
-        <div class="block">
-            <p class="header">аул Кемах</p>
-            <p class="content">Переход на стоянку в аул Дарваг</p>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img15.webp" alt="image">
-                <div class="info">
-                    <p>Переход</p>
-                    <p>17км ↗548м ↘517м</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="date">07 августа</p>
-        <div class="block">
-            <p class="header">Сосновый Бор</p>
-            <p class="content">Переход к стоянке Сосновый Бор</p>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img16.jpeg" alt="image">
-                <img src="travel/img17.webp" alt="image">
-                <div class="info">
-                    <p>Переход</p>
-                    <p>17км ↗442м ↘836м</p>
-                </div>
-            </div>
-        </div>
-
-        <p class="date">08 августа</p>
-        <div class="block">
-            <p class="header">Дербент</p>
-            <p class="content">Мы направимся к железнодорожной станции Дербент, преодолев 5 километров. По пути у нас будет возможность посетить крепость Нарын-кала. Затем мы совершим 25-минутный железнодорожный трансфер до станции Араблинский. После этого нам предстоит преодолеть ещё 7 километров до кемпинга. В дороге мы также сможем увидеть экраноплан «Лунь».</p>
-            <p class="title">Галлерея</p>
-            <div class="images">
-                <img src="travel/img18.jpg" alt="image">
-                <img src="travel/img19.jpg" alt="image">
-                <div class="info">
-                    <p>Переход 1</p>
-                    <p>5км ↗0м ↘350м</p>
-                    <p>Переход 2</p>
-                    <p>7км ↗0м ↘0м</p>
-                </div>
-            </div>
+                    @if (blogContent.quote) {
+                        <figcaption>{{ blogContent.quote }}</figcaption>
+                    }
+                </figure>
+            }
         </div>
     </div>
 </div>
