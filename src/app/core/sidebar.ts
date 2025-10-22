@@ -245,7 +245,7 @@ import { Router } from '@angular/router';
                             <span class="arrow-circle"></span>
                         </span>
                     </p>
-                    <p (click)="redirectTo('home')" imageSrc="sertificate.png" style="--timeout: .4s;">
+                    <p (click)="redirectTo('sources')" imageSrc="sertificate.png" style="--timeout: .4s;">
                         <span class="text">Источники</span>
                         <span class="arrow-component">
                             <svg class="arrow-arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="12"
